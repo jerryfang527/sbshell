@@ -41,14 +41,25 @@
    "strategy": "ipv4_only"
 },    
 
-  "inbounds": [
+"inbounds": [
   {
-    "type": "tproxy",
-    "tag": "tproxy-in",
+    "tag": "tun-in",
+    "type": "tun",
+    "address": [
+      "172.19.0.1/30",
+      "fdfe:dcba:9876::1/126"
+    ],
+    "mtu": 9000,
+    "auto_route": true,
+    "auto_redirect": true
+  },
+  {
+    "tag": "mixed-in",
+    "type": "mixed",
     "listen": "0.0.0.0",
-    "listen_port": 7895
+    "listen_port": 7893
   }
-],    
+],
 
    "outbounds": [
     { "tag": "🚀 节点选择", "type": "selector", "outbounds": ["🔯 香港自动", "🇭🇰 香港节点","♻️ 其他节点","🔯 美国自动","🔯 日本自动", "🔯 台湾自动", "🔯 新加坡自动", "SG 新加坡节点", "TW 台湾节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "🐸 手动切换", "♻️ 自动选择", "🎯 全球直连"] },
@@ -84,7 +95,6 @@
   "route": {
         "auto_detect_interface": true,
         "final": "🐠 漏网之鱼",
-        "default_mark": 666,
     "rules": [
       {"action": "sniff"},
       {"protocol": "dns", "action": "hijack-dns"},
