@@ -69,7 +69,7 @@
     { "tag": "🍏 Apple", "type": "selector", "outbounds": ["🎯 全球直连", "🇭🇰 香港节点","♻️ 其他节点","🔯 美国自动","🔯 日本自动", "🇯🇵 日本节点", "🇺🇲 美国节点"] },
     { "tag": "🐠 漏网之鱼", "type": "selector", "outbounds": ["🔯 香港自动", "🇭🇰 香港节点", "🔯 台湾自动", "🔯 新加坡自动", "SG 新加坡节点", "♻️ 其他节点","🔯 美国自动","🔯 日本自动", "🇯🇵 日本节点", "🇺🇲 美国节点", "🐸 手动切换", "♻️ 自动选择", "🎯 全球直连"] },
     { "tag": "🐸 手动切换", "type": "selector", "outbounds": ["{all}"]},
-    { "tag": "🇭🇰 香港节点", "type": "selector", "outbounds": ["filter": [{ "action": "include", "keywords": ["🇭🇰|HK|hk|香港|港|HongKong"] }] },
+    { "tag": "🇭🇰 香港节点", "type": "selector", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["🇭🇰|HK|hk|香港|港|HongKong"] }] },
     { "tag": "TW 台湾节点", "type": "selector", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["🇹🇼|TW|tw|台湾|台|Taiwan"] }] },
     { "tag": "SG 新加坡节点", "type": "selector", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["🇸🇬|SG|sg|新加坡|新|Singapore"] }] },
     { "tag": "🇯🇵 日本节点", "type": "selector", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["🇯🇵|JP|jp|日本|日|Japan"] }] },
