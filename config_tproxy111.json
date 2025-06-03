@@ -115,7 +115,7 @@
     ],    
 
     "rule_set": [
-      { "tag": "direct-list", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/jerryfang527/sbshell/refs/heads/main/direct-list-sing.list", "download_detour": "🎯 全球直连" },
+      { "tag": "direct-list", "type": "local", "format": "source", "path": "/etc/sing-box/direct-list-sing.list" },
       { "tag": "geosite-chat", "type": "remote", "format": "binary", "url": "https://fcdgp.wstc1.eu.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-chat-!cn.srs", "download_detour": "🎯 全球直连" },
       { "tag": "geosite-youtube", "type": "remote", "format": "binary", "url": "https://fcdgp.wstc1.eu.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/youtube.srs", "download_detour": "🎯 全球直连" },
       { "tag": "geosite-google", "type": "remote", "format": "binary", "url": "https://fcdgp.wstc1.eu.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/google.srs", "download_detour": "🎯 全球直连" },
