@@ -241,6 +241,10 @@
       "tag": "dns-out",
       "type": "dns"
     }
+    {
+      "type": "block",
+      "tag": "block"
+    }
   ],
   
   "route": 
@@ -251,7 +255,7 @@
    [
      {"action": "sniff"},
      {"protocol": "dns", "action": "hijack-dns"},
-     {"ip_cidr": ["5.5.5.5/32"], "outbound": "🎯 全球直连" },
+     {"ip_cidr": ["5.5.5.5/32"], "outbound": "block" },
      {"clash_mode": "direct", "outbound": "🎯 全球直连"},
      {"clash_mode": "global", "outbound": "GLOBAL"},
      { "clash_mode": "direct", "outbound": "🎯 全球直连" },
