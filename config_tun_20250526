@@ -241,10 +241,6 @@
       "tag": "dns-out",
       "type": "dns"
     }
-    {
-      "type": "block",
-      "tag": "block"
-    }
   ],
   
   "route": 
