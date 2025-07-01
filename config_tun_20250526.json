@@ -253,11 +253,9 @@
      {"ip_cidr": ["5.5.5.5/32"], "outbound": "🎯 全球直连" },
      {"clash_mode": "direct", "outbound": "🎯 全球直连"},
      {"clash_mode": "global", "outbound": "GLOBAL"},
-     { "clash_mode": "direct", "outbound": "🎯 全球直连" },
-      { "clash_mode": "global", "outbound": "GLOBAL" },
-      { "domain": "manage.fyqfyc.eu.org", "outbound": "🎯 全球直连" },
-      { "domain": "tv1.fyqfyc.eu.org", "outbound": "🎯 全球直连" },
-      {
+     { "domain": "manage.fyqfyc.eu.org", "outbound": "🎯 全球直连" },
+     { "domain": "tv1.fyqfyc.eu.org", "outbound": "🎯 全球直连" },
+     {
         "domain": [
           "*.fyqfyc.eu.org",
           "fycfyc.eu.org",
