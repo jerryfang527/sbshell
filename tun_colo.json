@@ -30,7 +30,7 @@
    ],
    "rules": 
    [
-     {"outbound": "any", "server": "dns_direct", "disable_cache": true},
+     {"protocol": "dns", "server": "dns_direct"},
      {"clash_mode": "Direct", "server": "dns_direct"},
      {"clash_mode": "Global", "server": "dns_proxy"},
      {"rule_set": "geosite-cn", "action": "route","server": "dns_direct"},
@@ -88,6 +88,7 @@
   
   "route": 
  {
+   "default_domain_resolver": "dns_direct",
    "auto_detect_interface": true,
    "final": "🐠 兜底策略",
    "rules": 
